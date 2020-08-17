@@ -1,0 +1,28 @@
+ESTRUCTURA DEL PROYECTO
+
+.gitignore :Archivo que cosas ignorar al realizar backups en nuestros repositorios
+package-lick.json: Es un archivo qu guarda la información de cómo se creó el proyecto.
+package.json : Es muy sensible, se crea de forma automática. Y le dice a Angular cuales son las dependencias que necesita
+README.md : Son similares al html pero mucho más ligero.
+tsconfig.json: Le menciona a typescript como trabajar, y a qué estandar debe trabajar
+tslink.json: son reglas para desarrollo.
+
+//APP.COMPONENT
+.css : Es el que define el estilo del componente
+.html: Es el que brinda el html al componente.
+.spec.ts: Son los archivos de pruebas automáticas
+.module: Es una clase, que tiene un decorador @NGModule.
+
+
+//ASSETS   
+Es el directorio para recursos estáticos
+    .gitkeep : No tiene nada, se crea para cuando se sube la aplicación a un repositorio, se mantega el directorio
+
+//ENVIRONMENTS
+    environment.prod.ts : variable de ambie de producción
+    environments.ts: variables de ambiente de desarrollo
+
+karma.confg.js : Pruebas de Karma
+main.ts: el primer codigo para inicializar la aplicación
+polyfills.ts: Son funciones que ayudan a la compatibilidad entre las versiones antiguas de navegadores web
+
