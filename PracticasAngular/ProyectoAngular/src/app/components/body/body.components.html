@@ -1,0 +1,24 @@
+<!-- Como utilizar los ngIF y los ngFor-->
+<div class="row">
+  <div class="col">
+    <h1>*ngIf</h1>
+    <hr>
+    <div *ngIf ="mostrar" class="card text-white bg-warning mb-3" style="width: 100%;">
+      <div class="card-body">
+        <h5 class="card-title font-title">{{frase.autor}}</h5>
+        <p class="card-text font-text">{{frase.mensaje}}</p>
+      </div>
+    </div>
+
+    <button (click)="mostrar = !mostrar" class="btn btn-warning btn-block" style="color: white; font-weight: bold;">
+      Mostras/Ocultar
+    </button>
+  </div>
+  <div class="col">
+    <h1>*ngFor</h1>
+    <hr>   
+    <ul class="list-group"> 
+      <li *ngFor = "let personaje of personajes; let i= index" class="list-group-item">{{i + 1}}:  {{personaje}}</li>
+    </ul>
+  </div>
+</div>

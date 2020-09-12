@@ -9,11 +9,15 @@ import { AppComponent } from './app.component';
 //Para que un componente pueda ser declarado y así ser usado, se necesita importar 
 //pero para que pueda hacerse referencia desde el app.module, la clase debe ser "export class"
 import {HeaderComponent} from './components/header/header.components';
+import {BodyComponent} from './components/body/body.components';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    BodyComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
